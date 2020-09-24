@@ -20,7 +20,7 @@ export default class YouTubeDebugger extends Component{
       return(<button className='bitrate' onClick={this.hb}>Bitrate</button>)
     }
     resolutionButton=()=>{
-      return(<button className='resolution' onClick={this.hr}>Resolution</button>)
+      return(<button className='resolution' onClick={this.hb}>Resolution</button>)
     }
         
     hb =(e)=>{
@@ -32,23 +32,9 @@ export default class YouTubeDebugger extends Component{
           }
         })
     }
-    hr =(e)=>{
-        this.setState({
-          ...this.state,
-          settings: {
-            ...this.state.settings,
-            video: {
-              resolution: '720p'
-            }
-          }
-        })
-    }
     
             
     render(){
-        return(
-        [this.bitrateButton(),
-        this.resolutionButton()]
-        )
+        return(<button className='bitrate' onClick={this.hb}>Bitrate</button>)
     }
 }

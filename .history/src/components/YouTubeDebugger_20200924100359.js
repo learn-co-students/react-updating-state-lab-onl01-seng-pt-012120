@@ -47,8 +47,8 @@ export default class YouTubeDebugger extends Component{
             
     render(){
         return(
-        [this.bitrateButton(),
-        this.resolutionButton()]
+        this.bitrateButton(),
+        this.resolutionButton()
         )
     }
 }
